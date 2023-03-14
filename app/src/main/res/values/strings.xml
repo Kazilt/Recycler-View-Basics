@@ -3,4 +3,5 @@
     <string name="enter_item_name">Enter item name</string>
     <string name="add_item">Add Item</string>
     <string name="remove_last_item">Remove Last Item</string>
+    <string name="vehicle">Vehicle</string>
 </resources>

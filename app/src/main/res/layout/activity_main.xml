@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="608dp"
+        app:layout_constraintBottom_toTopOf="@+id/divider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <EditText
         android:id="@+id/etItemName"
         android:layout_width="wrap_content"
@@ -18,7 +30,7 @@
         app:layout_constraintHorizontal_bias="0.079"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="0.518" />
+        app:layout_constraintVertical_bias="0.577" />
 
     <Button
         android:id="@+id/btnAddItem"
@@ -26,24 +38,26 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:text="@string/add_item"
-        app:layout_constraintBottom_toBottomOf="@+id/etItemName"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRemove"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.506"
-        app:layout_constraintStart_toEndOf="@+id/etItemName"
-        app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintHorizontal_bias="0.869"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnRemove"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/remove_last_item"
+        android:textSize="10sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/etItemName"
-        app:layout_constraintTop_toTopOf="@+id/etItemName"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintEnd_toEndOf="@+id/btnAddItem"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toStartOf="@+id/btnAddItem"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerView"
+        app:layout_constraintVertical_bias="0.766" />
 
     <View
         android:id="@+id/divider"
@@ -55,7 +69,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.83" />
+        app:layout_constraintVertical_bias="0.841" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
