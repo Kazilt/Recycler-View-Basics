@@ -16,6 +16,7 @@ class MainActivity : AppCompatActivity() {
         //TODO 4: Go to RecyclerAdapter file
         //TODO 12: Set recycler view's layout manager to LinearLayoutManager
         //TODO 13: Initialize an arrayList that represents the recyclerView of generic RecyclerItem
+        //TODO Also set the recycler view's adapter to a RecyclerAdapter(arrayList)
         //TODO 14: set an onClickListener for btnAddItem and add a new RecyclerItem to the arrayList
         //TODO make sure to call rv.adapter?.notifyItemInserted(position) to make recycler display changes
         //TODO 15: set a click listener for btnRemoveItem but use rv.adapter?.notifyItemRemoved(list.size)

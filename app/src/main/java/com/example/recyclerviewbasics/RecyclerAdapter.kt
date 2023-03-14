@@ -13,7 +13,8 @@ class RecyclerAdapter() {
     //TODO 7.5: Go to RecyclerItem, come back after
     //TODO 8: create a nested class called ViewHolder that takes in one arg of type View and
     //TODO extends RecyclerView.ViewHolder(itemView), then set new vals itemText and itemImage to their respective textview and img View
-    //TODO 9: override onCreateViewHolder, return a ViewHolder of a LayoutInflater, make sure to set val itemView = LayoutInflater(...) before returning
+    //TODO 9: override onCreateViewHolder, return a ViewHolder of a LayoutInflater (make sure to use .from and .inflate)
+    //TODO inflate has args (R.layout.rv_item, parent, false)
     //TODO 10: override getItemCount, return the size of the list
     //TODO 11: override onBindViewHolder, get the item from list and change holder's text
     //TODO and image to the item's text and image (use .setImageResource), go to MainActivity
